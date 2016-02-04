@@ -1,0 +1,87 @@
+@import 'colors';
+
+.button {
+  color: $white !important;
+  padding: 0.75em 1em 0.66em 1em;
+  text-align: center;
+}
+
+.red.button {
+  background-color: $red;
+  color: $white !important;
+}
+
+.orange.button {
+  background-color: $orange;
+  color: $white !important;
+}
+
+.yellow.button {
+  background-color: $yellow;
+  color: $white !important;
+}
+
+.green.button {
+  background-color: $green;
+  color: $white !important;
+}
+
+.blue.button {
+  background-color: $blue;
+  color: $white !important;
+}
+
+.purple.button {
+  background-color: $purple;
+  color: $white !important;
+}
+
+.black.button {
+  background-color: $black;
+  color: $white !important;
+}
+
+.dark-grey.button {
+  background-color: $dgrey;
+  color: $white !important;
+}
+
+.red.button:hover {
+  background-color: lighten($red, 5%);
+  color: $white !important;
+}
+
+.orange.button:hover {
+  background-color: lighten($orange, 5%);
+  color: $white !important;
+}
+
+.yellow.button:hover {
+  background-color: lighten($yellow, 5%);
+  color: $white !important;
+}
+
+.green.button:hover {
+  background-color: lighten($green, 5%);
+  color: $white !important;
+}
+
+.blue.button:hover {
+  background-color: lighten($blue, 5%);
+  color: $white !important;
+}
+
+.purple.button:hover {
+  background-color: lighten($purple, 5%);
+  color: $white !important;
+}
+
+.dark-grey.button:hover {
+  background-color: lighten($dgrey, 5%);
+  color: $white !important;
+}
+
+.black.button:hover {
+  background-color: lighten($black, 5%);
+  color: $white !important;
+}

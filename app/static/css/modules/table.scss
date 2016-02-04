@@ -1,0 +1,29 @@
+@import 'colors';
+
+table * {
+  padding: 0.75em 1em 0.66em 1em;
+}
+
+table { width: 100%; }
+
+thead,
+thead tr,
+thead tr:hover,
+tfoot,
+tfoot tr,
+tfoot tr:hover { background: $lgrey; }
+
+thead { font-weight: 600; }
+
+tr { border-bottom: 1px solid $lgrey; }
+
+table.striped tr:nth-child(odd)  { border: none; }
+table.striped tr:nth-child(even) {
+  background: lighten($lgrey, 7.5%);
+  border: none;
+}
+
+tr:hover,
+table.striped tr:nth-child(even):hover { background: lighten($lgrey, 5%); }
+
+table.celled td { border: 1px solid $lgrey; }

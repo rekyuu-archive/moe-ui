@@ -1,0 +1,21 @@
+{
+  "name": "moe-ui",
+  "description": "HTML5 and CSS3 design boilerplate",
+  "author": "rekyuu",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rekyuu-web/moe-ui"
+  },
+  "scripts": {
+    "start": "brunch watch --server"
+  },
+  "dependencies": {
+    "auto-reload-brunch": ">= 1.0 < 1.9",
+    "clean-css-brunch": ">= 1.0 < 1.9",
+    "css-brunch": ">= 1.0 < 1.9",
+    "javascript-brunch": ">= 1.0 < 1.9",
+    "sass-brunch": "^2.0.0",
+    "uglify-js-brunch": ">= 1.0 < 1.9"
+  }
+}

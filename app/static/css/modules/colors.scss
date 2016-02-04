@@ -1,0 +1,30 @@
+$red:     #D96F6B;
+$orange:  #E0AD6E;
+$yellow:  #E5BE73;
+$green:   #8BBD69;
+$blue:    #7586C1;
+$purple:  #B494E9;
+$white:   #F4F3F1;
+$black:   #0B0C0E;
+
+$lgrey:    darken($white, 10%);
+$dgrey:   lighten($black, 25%);
+
+$bg:      $white;
+$fg:      $black;
+
+.red    { color: $red; }
+.orange { color: $orange; }
+.yellow { color: $yellow; }
+.green  { color: $green; }
+.blue   { color: $blue; }
+.purple { color: $purple; }
+.white  { color: $white; }
+.black  { color: $black; }
+.light-grey { color: $lgrey; }
+.dark-grey  { color: $dgrey; }
+
+body {
+  background-color: $bg;
+  color: $fg;
+}

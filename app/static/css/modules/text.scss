@@ -1,0 +1,60 @@
+@import "colors";
+
+ .italics, i { font-style: italic; }
+    .bold, b { font-weight: 700; }
+    .regular { font-weight: 600; }
+      .light { font-weight: normal; }
+.extra-light { font-weight: 300; }
+
+h1, h2, h3,
+h4, h5, h6 { padding-top: 0.75em; }
+
+h1.dividing, h2.dividing, h3.dividing,
+h4.dividing, h5.dividing, h6.dividing {
+  border-bottom: 1px solid $lgrey;
+  padding-bottom: 0.25em;
+}
+
+h1 { font-size: 3.00em; }
+h2 { font-size: 2.75em; }
+h3 { font-size: 2.50em; }
+h4 { font-size: 2.25em; }
+h5 { font-size: 2.00em; }
+h6 { font-size: 1.75em; }
+
+code {
+  background: $lgrey;
+  font-family: "Hack", monospace;
+  font-size: 0.88em;
+  padding: .25em .5em;
+}
+
+p, pre {
+  line-height: 1.5em;
+  margin-top: 1.25em;
+}
+
+pre {
+  background: $lgrey;
+  font-family: "Hack", monospace;
+  padding: 1.25em;
+}
+
+pre code { padding: 0; }
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+a:hover { color: darken($blue, 5%); }
+
+i.i {
+  font-family: 'octicons';
+  font-style: normal;
+}
+
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+.block  { text-align: block; }

@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'octicons';
+  src: url('webfonts/octicons/octicons.eot?#iefix') format('embedded-opentype'),
+       url('webfonts/octicons/octicons.woff') format('woff'),
+       url('webfonts/octicons/octicons.ttf') format('truetype'),
+       url('webfonts/octicons/octicons.svg#octicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+
+.octicon is optimized for 16pxi.
+.mega-octicon is optimized for 32px but can be used larger.
+
+*/
+i.i, i.mega-i {
+  font: normal normal normal 16px/1 ;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+i.mega-i { font-size: 32px; }
+
+i.alert:before { content: '\f02d'} /*  */
+i.arrow-down:before { content: '\f03f'} /*  */
+i.arrow-left:before { content: '\f040'} /*  */
+i.arrow-right:before { content: '\f03e'} /*  */
+i.arrow-small-down:before { content: '\f0a0'} /*  */
+i.arrow-small-left:before { content: '\f0a1'} /*  */
+i.arrow-small-right:before { content: '\f071'} /*  */
+i.arrow-small-up:before { content: '\f09f'} /*  */
+i.arrow-up:before { content: '\f03d'} /*  */
+i.microscope:before,
+i.beaker:before { content: '\f0dd'} /*  */
+i.bell:before { content: '\f0de'} /*  */
+i.bold:before { content: '\f0e2'} /*  */
+i.book:before { content: '\f007'} /*  */
+i.bookmark:before { content: '\f07b'} /*  */
+i.briefcase:before { content: '\f0d3'} /*  */
+i.broadcast:before { content: '\f048'} /*  */
+i.browser:before { content: '\f0c5'} /*  */
+i.bug:before { content: '\f091'} /*  */
+i.calendar:before { content: '\f068'} /*  */
+i.check:before { content: '\f03a'} /*  */
+i.checklist:before { content: '\f076'} /*  */
+i.chevron-down:before { content: '\f0a3'} /*  */
+i.chevron-left:before { content: '\f0a4'} /*  */
+i.chevron-right:before { content: '\f078'} /*  */
+i.chevron-up:before { content: '\f0a2'} /*  */
+i.circle-slash:before { content: '\f084'} /*  */
+i.circuit-board:before { content: '\f0d6'} /*  */
+i.clippy:before { content: '\f035'} /*  */
+i.clock:before { content: '\f046'} /*  */
+i.cloud-download:before { content: '\f00b'} /*  */
+i.cloud-upload:before { content: '\f00c'} /*  */
+i.code:before { content: '\f05f'} /*  */
+i.comment-add:before,
+i.comment:before { content: '\f02b'} /*  */
+i.comment-discussion:before { content: '\f04f'} /*  */
+i.credit-card:before { content: '\f045'} /*  */
+i.dash:before { content: '\f0ca'} /*  */
+i.dashboard:before { content: '\f07d'} /*  */
+i.database:before { content: '\f096'} /*  */
+i.clone:before,
+i.desktop-download:before { content: '\f0dc'} /*  */
+i.device-camera:before { content: '\f056'} /*  */
+i.device-camera-video:before { content: '\f057'} /*  */
+i.device-desktop:before { content: '\f27c'} /*  */
+i.device-mobile:before { content: '\f038'} /*  */
+i.diff:before { content: '\f04d'} /*  */
+i.diff-added:before { content: '\f06b'} /*  */
+i.diff-ignored:before { content: '\f099'} /*  */
+i.diff-modified:before { content: '\f06d'} /*  */
+i.diff-removed:before { content: '\f06c'} /*  */
+i.diff-renamed:before { content: '\f06e'} /*  */
+i.ellipsis:before { content: '\f09a'} /*  */
+i.eye-unwatch:before,
+i.eye-watch:before,
+i.eye:before { content: '\f04e'} /*  */
+i.file-binary:before { content: '\f094'} /*  */
+i.file-code:before { content: '\f010'} /*  */
+i.file-directory:before { content: '\f016'} /*  */
+i.file-media:before { content: '\f012'} /*  */
+i.file-pdf:before { content: '\f014'} /*  */
+i.file-submodule:before { content: '\f017'} /*  */
+i.file-symlink-directory:before { content: '\f0b1'} /*  */
+i.file-symlink-file:before { content: '\f0b0'} /*  */
+i.file-text:before { content: '\f011'} /*  */
+i.file-zip:before { content: '\f013'} /*  */
+i.flame:before { content: '\f0d2'} /*  */
+i.fold:before { content: '\f0cc'} /*  */
+i.gear:before { content: '\f02f'} /*  */
+i.gift:before { content: '\f042'} /*  */
+i.gist:before { content: '\f00e'} /*  */
+i.gist-secret:before { content: '\f08c'} /*  */
+i.git-branch-create:before,
+i.git-branch-delete:before,
+i.git-branch:before { content: '\f020'} /*  */
+i.git-commit:before { content: '\f01f'} /*  */
+i.git-compare:before { content: '\f0ac'} /*  */
+i.git-merge:before { content: '\f023'} /*  */
+i.git-pull-request-abandoned:before,
+i.git-pull-request:before { content: '\f009'} /*  */
+i.globe:before { content: '\f0b6'} /*  */
+i.graph:before { content: '\f043'} /*  */
+i.heart:before { content: '\2665'} /* ♥ */
+i.history:before { content: '\f07e'} /*  */
+i.home:before { content: '\f08d'} /*  */
+i.horizontal-rule:before { content: '\f070'} /*  */
+i.hubot:before { content: '\f09d'} /*  */
+i.inbox:before { content: '\f0cf'} /*  */
+i.info:before { content: '\f059'} /*  */
+i.issue-closed:before { content: '\f028'} /*  */
+i.issue-opened:before { content: '\f026'} /*  */
+i.issue-reopened:before { content: '\f027'} /*  */
+i.italic:before { content: '\f0e4'} /*  */
+i.jersey:before { content: '\f019'} /*  */
+i.key:before { content: '\f049'} /*  */
+i.keyboard:before { content: '\f00d'} /*  */
+i.law:before { content: '\f0d8'} /*  */
+i.light-bulb:before { content: '\f000'} /*  */
+i.link:before { content: '\f05c'} /*  */
+i.link-external:before { content: '\f07f'} /*  */
+i.list-ordered:before { content: '\f062'} /*  */
+i.list-unordered:before { content: '\f061'} /*  */
+i.location:before { content: '\f060'} /*  */
+i.gist-private:before,
+i.mirror-private:before,
+i.git-fork-private:before,
+i.lock:before { content: '\f06a'} /*  */
+i.logo-gist:before { content: '\f0ad'} /*  */
+i.logo-github:before { content: '\f092'} /*  */
+i.mail:before { content: '\f03b'} /*  */
+i.mail-read:before { content: '\f03c'} /*  */
+i.mail-reply:before { content: '\f051'} /*  */
+i.mark-github:before { content: '\f00a'} /*  */
+i.markdown:before { content: '\f0c9'} /*  */
+i.megaphone:before { content: '\f077'} /*  */
+i.mention:before { content: '\f0be'} /*  */
+i.milestone:before { content: '\f075'} /*  */
+i.mirror-public:before,
+i.mirror:before { content: '\f024'} /*  */
+i.mortar-board:before { content: '\f0d7'} /*  */
+i.mute:before { content: '\f080'} /*  */
+i.no-newline:before { content: '\f09c'} /*  */
+i.octoface:before { content: '\f008'} /*  */
+i.organization:before { content: '\f037'} /*  */
+i.package:before { content: '\f0c4'} /*  */
+i.paintcan:before { content: '\f0d1'} /*  */
+i.pencil:before { content: '\f058'} /*  */
+i.person-add:before,
+i.person-follow:before,
+i.person:before { content: '\f018'} /*  */
+i.pin:before { content: '\f041'} /*  */
+i.plug:before { content: '\f0d4'} /*  */
+i.repo-create:before,
+i.gist-new:before,
+i.file-directory-create:before,
+i.file-add:before,
+i.plus:before { content: '\f05d'} /*  */
+i.primitive-dot:before { content: '\f052'} /*  */
+i.primitive-square:before { content: '\f053'} /*  */
+i.pulse:before { content: '\f085'} /*  */
+i.question:before { content: '\f02c'} /*  */
+i.quote:before { content: '\f063'} /*  */
+i.radio-tower:before { content: '\f030'} /*  */
+i.repo-delete:before,
+i.repo:before { content: '\f001'} /*  */
+i.repo-clone:before { content: '\f04c'} /*  */
+i.repo-force-push:before { content: '\f04a'} /*  */
+i.gist-fork:before,
+i.repo-forked:before { content: '\f002'} /*  */
+i.repo-pull:before { content: '\f006'} /*  */
+i.repo-push:before { content: '\f005'} /*  */
+i.rocket:before { content: '\f033'} /*  */
+i.rss:before { content: '\f034'} /*  */
+i.ruby:before { content: '\f047'} /*  */
+i.search-save:before,
+i.search:before { content: '\f02e'} /*  */
+i.server:before { content: '\f097'} /*  */
+i.settings:before { content: '\f07c'} /*  */
+i.shield:before { content: '\f0e1'} /*  */
+i.log-in:before,
+i.sign-in:before { content: '\f036'} /*  */
+i.log-out:before,
+i.sign-out:before { content: '\f032'} /*  */
+i.smiley:before { content: '\f0e7'} /*  */
+i.squirrel:before { content: '\f0b2'} /*  */
+i.star-add:before,
+i.star-delete:before,
+i.star:before { content: '\f02a'} /*  */
+i.stop:before { content: '\f08f'} /*  */
+i.repo-sync:before,
+i.sync:before { content: '\f087'} /*  */
+i.tag-remove:before,
+i.tag-add:before,
+i.tag:before { content: '\f015'} /*  */
+i.tasklist:before { content: '\f0e5'} /*  */
+i.telescope:before { content: '\f088'} /*  */
+i.terminal:before { content: '\f0c8'} /*  */
+i.text-size:before { content: '\f0e3'} /*  */
+i.three-bars:before { content: '\f05e'} /*  */
+i.thumbsdown:before { content: '\f0db'} /*  */
+i.thumbsup:before { content: '\f0da'} /*  */
+i.tools:before { content: '\f031'} /*  */
+i.trashcan:before { content: '\f0d0'} /*  */
+i.triangle-down:before { content: '\f05b'} /*  */
+i.triangle-left:before { content: '\f044'} /*  */
+i.triangle-right:before { content: '\f05a'} /*  */
+i.triangle-up:before { content: '\f0aa'} /*  */
+i.unfold:before { content: '\f039'} /*  */
+i.unmute:before { content: '\f0ba'} /*  */
+i.verified:before { content: '\f0e6'} /*  */
+i.versions:before { content: '\f064'} /*  */
+i.watch:before { content: '\f0e0'} /*  */
+i.remove-close:before,
+i.x:before { content: '\f081'} /*  */
+i.zap:before { content: '\26A1'} /* ⚡ */

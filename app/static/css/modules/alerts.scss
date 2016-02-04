@@ -1,0 +1,52 @@
+@import 'colors';
+
+.alert {
+  color: $white !important;
+  padding: 0.75em 1em 0.66em 1em;
+}
+
+.alert i { padding: 0.75em 1em 0.66em 1em; }
+
+.red.alert,
+.error.alert {
+  background-color: $red;
+  color: $white !important;
+}
+
+.orange.alert {
+  background-color: $orange;
+  color: $white !important;
+}
+
+.yellow.alert,
+.warning.alert {
+  background-color: $yellow;
+  color: $white !important;
+}
+
+.green.alert,
+.success.alert {
+  background-color: $green;
+  color: $white !important;
+}
+
+.blue.alert,
+.info.alert {
+  background-color: $blue;
+  color: $white !important;
+}
+
+.purple.alert {
+  background-color: $purple;
+  color: $white !important;
+}
+
+.dark-grey.alert {
+  background-color: $dgrey;
+  color: $white !important;
+}
+
+.black.alert {
+  background-color: $black;
+  color: $white !important;
+}

@@ -1,5 +1,7 @@
 # moe ui
 
+View progress (if the server is running) [here](http://ui.riichi.me/).
+
 This is HTML5 application, built with [Brunch](http://brunch.io).
 
 ## Getting started

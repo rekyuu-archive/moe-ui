@@ -1,9 +1,12 @@
 @import 'colors';
 
 .button {
-  color: $white !important;
+  background-color: $lgrey;
+  color: $black !important;
   padding: 0.75em 1em 0.66em 1em;
   text-align: center;
+  display: inline-block;
+  margin-right: 1.25em;
 }
 
 .red.button {
@@ -46,6 +49,11 @@
   color: $white !important;
 }
 
+.button:hover {
+  background-color: darken($lgrey, 5%);
+  color: $black !important;
+}
+
 .red.button:hover {
   background-color: lighten($red, 5%);
   color: $white !important;
@@ -84,4 +92,62 @@
 .black.button:hover {
   background-color: lighten($black, 5%);
   color: $white !important;
+}
+
+.inverted.button {
+  background-color: rgba(0,0,0,0);
+  border: 1px solid $white;
+  color: $white !important;
+}
+
+.inverted.red.button {
+  border: 1px solid $red;
+  color: $red !important;
+}
+
+.inverted.orange.button {
+  border: 1px solid $orange;
+  color: $orange !important;
+}
+
+.inverted.yellow.button {
+  border: 1px solid $yellow;
+  color: $yellow !important;
+}
+
+.inverted.green.button {
+  border: 1px solid $green;
+  color: $green !important;
+}
+
+.inverted.blue.button {
+  border: 1px solid $blue;
+  color: $blue !important;
+}
+
+.inverted.purple.button {
+  border: 1px solid $purple;
+  color: $purple !important;
+}
+
+.inverted.button:hover {
+  background-color: $white;
+  color: $black !important;
+}
+
+.inverted.red.button:hover    { background-color: $red; }
+.inverted.orange.button:hover { background-color: $orange; }
+.inverted.yellow.button:hover { background-color: $yellow; }
+.inverted.green.button:hover  { background-color: $green; }
+.inverted.blue.button:hover   { background-color: $blue; }
+.inverted.purple.button:hover { background-color: $purple; }
+
+.large.button {
+  padding: 1.125em 1.5em 0.99em 1.5em;
+  font-size: 1.5em;
+}
+
+.huge.button {
+  padding: 1.125em 1.5em 0.99em 1.5em;
+  font-size: 2em;
 }

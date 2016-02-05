@@ -1,0 +1,63 @@
+@import 'colors';
+
+nav {
+  padding: 0.5em 0.5em 0em 0.5em;
+  font-size: 1.5em;
+
+  .inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: .75em;
+
+    .header {
+      font-weight: 700;
+      margin-right: 1em;
+    }
+
+    * {
+      margin-right: 0.25em;
+      display: inline-block;
+    }
+
+    a {
+      color: $white;
+      border-bottom: 0.5em solid $dgrey;
+      padding: 0.5em 0.5em 0.25em 0.5em;
+
+      &.active {
+        border-bottom: 0.25em solid $dgrey;
+        position: relative;
+
+        &:after {
+          content: '';
+          border-bottom: solid 0.25em $red;
+          width: 100%;
+          position: absolute;
+          bottom: -0.5em;
+          left: 0;
+        }
+      }
+
+      &:hover {
+        background-color: transparentize($white, 0.9);
+        color: $white;
+      }
+    }
+
+    .right-nav {
+      float: right;
+      margin-right: 0;
+
+      * {
+        margin-left: 1em;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .inner.fluid {
+    max-width: 100%;
+    margin: 0;
+    padding-left: 0;
+  }
+}

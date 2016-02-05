@@ -1,0 +1,53 @@
+@import 'colors';
+
+.label {
+  background: $lgrey;
+  color: $black;
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-right: 0.5em;
+  padding: 0.33em 0.5em 0.25em 0.5em;
+}
+
+.label i { margin-right: 0.5em; }
+
+.red.label {
+  background: $red;
+  color: $white;
+}
+
+.orange.label {
+  background: $orange;
+  color: $white;
+}
+
+.yellow.label {
+  background: $yellow;
+  color: $white;
+}
+
+.green.label {
+  background: $green;
+  color: $white;
+}
+
+.blue.label {
+  background: $blue;
+  color: $white;
+}
+
+.purple.label {
+  background: $purple;
+  color: $white;
+}
+
+.dark-grey.label {
+  background: $dgrey;
+  color: $white;
+}
+
+.black.label {
+  background: $black;
+  color: $white;
+}

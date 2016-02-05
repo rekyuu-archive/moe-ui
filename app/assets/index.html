@@ -8,25 +8,32 @@
     <meta name="description" content="cute and minimal ui">
     <meta name="author" content="rekyuu">
 
-    <link rel="icon" href="/images/favicon.png">
+    <link rel="icon" href="/img/favicon2.png">
     <link rel="stylesheet" href="app.css">
   </head>
 
   <body>
+    <nav class="dark-grey bg">
+      <div class="inner">
+        <span class="white header">
+          <a href="/"><i class="i red heart"></i> moe ui</a>
+        </span>
+
+        <a href="/" class="active">Style</a>
+        <a href="https://github.com/rekyuu-web/moe-ui" target="_blank">Github</a>
+      </div>
+    </nav>
+
     <div class="grid">
       <div class="col-1-1">
-        <h1 class="dividing">
-          <b>moe ui</b>
-          <span style="font-size: 50%;">
-            by <a href="https://github.com/rekyuu" target="_blank">rekyuu</a>
-          </span>
-        </h1>
+        <h1 class="dividing"><b>Style</b></h1>
       </div>
 
       <div class="col-1-1">
         <p class="red"><b>This is a work in progress.</b></p>
-        <p><b>Github:</b> <a href="https://github.com/rekyuu-web/moe-ui" target="_blank">rekyuu-web/moe-ui</a></p>
+
         <p><b>Fonts:</b> <a href="http://overpassfont.org/" target="_blank">Overpass</a>, <a href="http://sourcefoundry.org/hack/" target="_blank">Hack</a>, <a href="https://octicons.github.com/" target="_blank">Octicons</a></p>
+
         <p>Inspired by <a href="http://semantic-ui.com/" target="_blank">Semantic UI</a>.</p>
       </div>
 
@@ -71,6 +78,13 @@
       </div>
 
       <div class="col-1-1">
+        <h5 class="dividing">
+          <b>Dividing Header</b>
+          <span class="subheader">and a subheader</span>
+        </h5>
+      </div>
+
+      <div class="col-1-1">
         <h3 class="dividing">Body Text</h3>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus velit at purus blandit accumsan. In in ultricies nunc, et pharetra leo. Ut dui arcu, tincidunt ut libero vel, euismod efficitur diam. Nam sagittis velit at lacinia faucibus. <b>Cras cursus porta est in dignissim. Nunc iaculis quam id enim accumsan ultricies.</b> Duis bibendum nibh sapien, sit amet volutpat quam pellentesque ac. Nunc nibh urna, consequat a malesuada accumsan, varius vitae dolor. Sed lacus dolor, dignissim ut porttitor quis, auctor eu elit. <i>Praesent in dolor posuere, euismod lacus sit amet, sagittis urna.</i> Sed eget dictum diam, id viverra risus. <code>Fusce vel ligula arcu.</code> Nullam elit lacus, rhoncus in quam vitae, vehicula tincidunt libero. <a href="#">Maecenas tristique feugiat ipsum sed porta.</a></p>
@@ -86,14 +100,29 @@ $ mix deps.get</code></pre>
         <h3 class="dividing">Buttons</h3>
       </div>
 
-      <div class="col-1-8"><a href="" class="fluid red button">Button</a></div>
-      <div class="col-1-8"><a href="" class="fluid orange button">Button</a></div>
-      <div class="col-1-8"><a href="" class="fluid yellow button">Button</a></div>
-      <div class="col-1-8"><a href="" class="fluid green button">Button</a></div>
-      <div class="col-1-8"><a href="" class="fluid blue button">Button</a></div>
-      <div class="col-1-8"><a href="" class="fluid purple button">Button</a></div>
-      <div class="col-1-8"><a href="" class="fluid dark-grey button">Button</a></div>
-      <div class="col-1-8"><a href="" class="fluid black button">Button</a></div>
+      <div class="col-1-9"><a href="" class="fluid button">Button</a></div>
+      <div class="col-1-9"><a href="" class="fluid red button">Button</a></div>
+      <div class="col-1-9"><a href="" class="fluid orange button">Button</a></div>
+      <div class="col-1-9"><a href="" class="fluid yellow button">Button</a></div>
+      <div class="col-1-9"><a href="" class="fluid green button">Button</a></div>
+      <div class="col-1-9"><a href="" class="fluid blue button">Button</a></div>
+      <div class="col-1-9"><a href="" class="fluid purple button">Button</a></div>
+      <div class="col-1-9"><a href="" class="fluid dark-grey button">Button</a></div>
+      <div class="col-1-9"><a href="" class="fluid black button">Button</a></div>
+
+      <div class="col-1-1 black bg" style="padding: 1.25em 0 0 1.25em; border-right: 1.25em solid #F4F3F1; margin-bottom: 1.25em">
+        <div class="col-1-7"><a href="" class="fluid inverted button">Button</a></div>
+        <div class="col-1-7"><a href="" class="fluid inverted red button">Button</a></div>
+        <div class="col-1-7"><a href="" class="fluid inverted orange button">Button</a></div>
+        <div class="col-1-7"><a href="" class="fluid inverted yellow button">Button</a></div>
+        <div class="col-1-7"><a href="" class="fluid inverted green button">Button</a></div>
+        <div class="col-1-7"><a href="" class="fluid inverted blue button">Button</a></div>
+        <div class="col-1-7"><a href="" class="fluid inverted purple button">Button</a></div>
+      </div>
+
+      <div class="col-1-3"><a href="" class="button">Regular Button</a></div>
+      <div class="col-1-3"><a href="" class="large button">Large Button</a></div>
+      <div class="col-1-3"><a href="" class="huge button">Huge Button</a></div>
 
       <div class="col-1-1">
         <h3 class="dividing">Alerts</h3>
@@ -259,6 +288,79 @@ $ mix deps.get</code></pre>
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <div class="col-1-1">
+        <h3 class="dividing">Label</h3>
+      </div>
+
+      <div class="col-1-1">
+        <div class="label">
+          <i class="i heart"></i>
+          123
+        </div>
+
+        <div class="red label">
+          <i class="i heart"></i>
+          123
+        </div>
+
+        <div class="orange label">
+          <i class="i heart"></i>
+          123
+        </div>
+
+        <div class="yellow label">
+          <i class="i heart"></i>
+          123
+        </div>
+
+        <div class="green label">
+          <i class="i heart"></i>
+          123
+        </div>
+
+        <div class="blue label">
+          <i class="i heart"></i>
+          123
+        </div>
+
+        <div class="purple label">
+          <i class="i heart"></i>
+          123
+        </div>
+
+        <div class="dark-grey label">
+          <i class="i heart"></i>
+          123
+        </div>
+
+        <div class="black label">
+          <i class="i heart"></i>
+          123
+        </div>
+      </div>
+
+      <div class="col-1-1">
+        <h3 class="dividing">Navigation</h3>
+      </div>
+
+      <div class="col-1-1">
+        <nav class="dark-grey bg">
+          <div class="inner fluid">
+            <span class="white header">
+              <a href="">header</a>
+            </span>
+
+            <a href="" class="active">Item 1</a>
+            <a href="">Item 2</a>
+            <a href="">Item 3</a>
+
+            <div class="right-nav">
+              <a href="">Right Item</a>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
 

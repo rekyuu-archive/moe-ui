@@ -22,6 +22,8 @@ h4 { font-size: 2.25em; }
 h5 { font-size: 2.00em; }
 h6 { font-size: 1.75em; }
 
+.subheader { font-size: 50%; }
+
 code {
   background: $lgrey;
   font-family: "Hack", monospace;
@@ -54,7 +56,7 @@ i.i {
   font-style: normal;
 }
 
-.left     { text-align: left; }
-.center   { text-align: center; }
-.right    { text-align: right; }
-.justify  { text-align: justify; }
+   .left { text-align: left; }
+ .center { text-align: center; }
+  .right { text-align: right; }
+.justify { text-align: justify; }

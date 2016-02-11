@@ -10,7 +10,11 @@ h1, h2, h3,
 h4, h5, h6 { padding-top: 0.75em; }
 
 h1 b, h2 b, h3 b,
-h4 b, h5 b, h6 b { font-weight: 700; }
+h4 b, h5 b, h6 b,
+h1.bold, h2.bold, h3.bold,
+h4.bold, h5.bold, h6.bold,
+.bold h1, .bold h2, .bold h3,
+.bold h4, .bold h5, .bold h6 { font-weight: 700; }
 
 h1.dividing, h2.dividing, h3.dividing,
 h4.dividing, h5.dividing, h6.dividing {

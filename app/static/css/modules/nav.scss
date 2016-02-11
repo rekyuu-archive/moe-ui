@@ -2,7 +2,7 @@
 
 nav {
   padding: 0.5em 0.5em 0em 0em;
-  font-size: 1.5em;
+  font-size: 1.25em;
 
   .inner {
     max-width: 1140px;
@@ -11,7 +11,7 @@ nav {
 
     .header {
       font-weight: 700;
-      margin-right: 1em;
+      margin: 0 1em 0 0.5em;
     }
 
     * {
@@ -20,12 +20,12 @@ nav {
     }
 
     a {
-      color: $white;
-      border-bottom: 0.5em solid $dgrey;
+      color: $black;
+      border-bottom: 0.5em solid $white;
       padding: 0.5em 0.5em 0.25em 0.5em;
 
       &.active {
-        border-bottom: 0.25em solid $dgrey;
+        border-bottom: 0.25em solid $white;
         position: relative;
 
         &:after {
@@ -39,8 +39,8 @@ nav {
       }
 
       &:hover {
-        background-color: transparentize($white, 0.9);
-        color: $white;
+        background-color: transparentize($black, 0.9);
+        color: $black;
       }
     }
 
@@ -59,5 +59,104 @@ nav {
     max-width: 100%;
     margin: 0;
     padding-left: 0;
+  }
+
+  &.red.bg {
+    a { border-color: $red;
+    &.active { border-color: $red; } }
+  }
+
+  &.orange.bg {
+    a { border-color: $orange;
+    &.active { border-color: $orange; } }
+  }
+
+  &.yellow.bg {
+    a { border-color: $yellow;
+    &.active { border-color: $yellow; } }
+  }
+
+  &.green.bg {
+    a { border-color: $green;
+    &.active { border-color: $green; } }
+  }
+
+  &.blue.bg {
+    a { border-color: $blue;
+    &.active { border-color: $blue; } }
+  }
+
+  &.purple.bg {
+    a { border-color: $purple;
+    &.active { border-color: $purple; } }
+  }
+
+  &.white.bg {
+    a { border-color: $white;
+    &.active { border-color: $white; } }
+  }
+
+  &.black.bg {
+    a { border-color: $black;
+    &.active { border-color: $black; } }
+  }
+
+  &.light-grey.bg {
+    a { border-color: $lgrey;
+    &.active { border-color: $lgrey; } }
+  }
+
+  &.dark-grey.bg {
+    a { border-color: $dgrey;
+    &.active { border-color: $dgrey; } }
+  }
+
+  &.red-active    { a.active:after{ border-color: $red; } }
+  &.orange-active { a.active:after{ border-color: $orange; } }
+  &.yellow-active { a.active:after{ border-color: $yellow; } }
+  &.green-active  { a.active:after{ border-color: $green; } }
+  &.blue-active   { a.active:after{ border-color: $blue; } }
+  &.purple-active { a.active:after{ border-color: $purple; } }
+  &.black-active  { a.active:after{ border-color: $black; } }
+  &.white-active  { a.active:after{ border-color: $white; } }
+  &.light-grey-active { a.active:after{ border-color: $lgrey; } }
+  &.dark-grey-active  { a.active:after{ border-color: $dgrey; } }
+
+  &.inverted {
+    a {
+      color: $white;
+
+      &:hover {
+        background-color: transparentize($white, 0.9);
+        color: $white;
+      }
+    }
+  }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  nav {
+    padding: 0 0.5em;
+
+    .inner {
+      padding: 0 !important;
+
+      .header, a {
+        width: 100%;
+        margin: 0.5em 0 0 0 !important;
+      }
+
+      .header * {
+        margin-top: 0 !important;
+        margin-bottom: -0.5em !important;
+      }
+
+      .right-nav {
+        float: none !important;
+        width: 100%;
+
+        * { margin: 0.5em 0 0 0 !important; }
+      }
+    }
   }
 }
